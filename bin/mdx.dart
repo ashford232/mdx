@@ -1,5 +1,7 @@
+import 'dart:io';
+
 import 'package:mdx/mdx.dart' as mdx;
 
-void main(List<String> arguments) {
-  print('Hello world: ${mdx.calculate()}!');
+Future<void> main(List<String> arguments) async {
+  exitCode = await mdx.run(arguments);
 }
