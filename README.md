@@ -1,8 +1,8 @@
 # MDX
 
-A simple directory creation utility for Windows, written in Dart.
+A simple directory creation command-line utility written in Dart.
 
-Inspired by Unix `mkdir`.
+Inspired by Unix `mkdir`, MDX makes creating directories from your terminal straightforward.
 
 ## Features
 
@@ -11,42 +11,62 @@ Inspired by Unix `mkdir`.
 - Simple command-line interface.
 - Helpful error messages.
 - Built-in help and version information.
+- Standalone Windows installer.
 
 ## Installation
 
-**Windows**
+### Dart Developers
 
-Download the latest `MDX-Setup.exe` from the [Releases](https://github.com/ashford232/mdx/releases) page.
+Install MDX globally using Dart:
 
-Run the installer and follow the instructions.
+```bash
+dart pub global activate mdx
+```
 
-After installation, open PowerShell or Command Prompt and use `mdx` from any directory.
+You can then run MDX using:
 
-*Windows installer coming soon.*
+```bash
+mdx documents
+```
+
+If your terminal cannot find the `mdx` command, make sure Dart's Pub cache `bin` directory is added to your PATH.
+
+### Windows Users
+
+Don't have Dart installed? No problem.
+
+Download the latest **MDX Windows Installer** from the [GitHub Releases](https://github.com/ashford232/mdx/releases) page.
+
+1. Download `MDX-Setup-0.1.0.exe`.
+2. Run the installer.
+3. Follow the installation instructions.
+4. Open a new terminal and start using MDX.
+
+No Dart SDK or manual configuration required.
 
 ## Usage
 
 Create a directory:
 
-```powershell
+```bash
 mdx documents
 ```
 
 Create multiple directories:
 
-```powershell
+```bash
 mdx documents images videos
 ```
 
 Display help:
 
-```powershell
+```bash
 mdx --help
 ```
 
 Display version:
 
-```powershell
+```bash
 mdx --version
 ```
 
@@ -79,4 +99,8 @@ dart run bin/mdx.dart documents
 
 ## License
 
-MIT
+MDX is released under the [MIT License](LICENSE).
+
+---
+
+**Developed by Room06Tech.**
